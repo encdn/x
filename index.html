@@ -23,7 +23,7 @@
 	    
 	   <input type="url" id="urlinput">
         <button onclick="shorturl()">Short The URL</button>
-        <script src="short.js"></script>
+        <script src="/short.js"></script>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
@@ -44,7 +44,7 @@ function geturl(){
     var url = document.getElementById("urlinput").value;
     var protocol_ok = url.startsWith("http://") || url.startsWith("https://") || url.startsWith("ftp://");
     if(!protocol_ok){
-        newurl = "http://"+url;
+        newurl = "https://encdn.github.io/x"+url;
         return newurl;
         }else{
             return url;
